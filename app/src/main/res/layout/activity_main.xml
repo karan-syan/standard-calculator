@@ -53,6 +53,16 @@
                     android:layout_margin="4dp"
                     android:layout_weight="1"/>
                 <Button
+                    android:id="@+id/btnspaceback"
+                    android:backgroundTint="@color/pink01"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="30sp"
+                    android:text="@string/_spaceback"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"/>
+                <Button
                     android:id="@+id/btnadd"
                     android:text="@string/_add"
                     android:backgroundTint="@color/pink01"

@@ -100,6 +100,10 @@ class MainActivity : AppCompatActivity() {
                     lastnumeric = false
                 }
             }
+            btnspaceback.setOnClickListener{
+                val str: String = textarea.text.toString().substring(0, textarea.text.toString().length - 1)
+                textarea.text = str
+            }
             btnmultiply.setOnClickListener{
                 if (lastnumeric){
                     textarea.append(btnmultiply.text)
