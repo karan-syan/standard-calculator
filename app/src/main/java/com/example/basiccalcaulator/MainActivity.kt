@@ -101,8 +101,11 @@ class MainActivity : AppCompatActivity() {
                 }
             }
             btnspaceback.setOnClickListener{
-                val str: String = textarea.text.toString().substring(0, textarea.text.toString().length - 1)
-                textarea.text = str
+                if(textarea.text.isEmpty()) {
+                    val str: String =
+                        textarea.text.toString().substring(0, textarea.text.toString().length - 1)
+                    textarea.text = str
+                }
             }
             btnmultiply.setOnClickListener{
                 if (lastnumeric){
@@ -120,7 +123,7 @@ class MainActivity : AppCompatActivity() {
                         textarea.text = result.toString()
                         lastdot = true
                     }catch (ex:Exception){
-                        textarea.text = "ERROR"
+                        textarea.setText("ERROR")
                         lastnumeric = false
 
                     }
