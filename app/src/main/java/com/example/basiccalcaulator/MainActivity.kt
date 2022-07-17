@@ -101,7 +101,7 @@ class MainActivity : AppCompatActivity() {
                 }
             }
             btnspaceback.setOnClickListener{
-                if(textarea.text.isEmpty()) {
+                if(textarea.text.isNotEmpty()) {
                     val str: String =
                         textarea.text.toString().substring(0, textarea.text.toString().length - 1)
                     textarea.text = str
